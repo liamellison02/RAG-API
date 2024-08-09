@@ -10,7 +10,7 @@ from langchain.chains import ConversationalRetrievalChain
 from langchain_community.chat_models import ChatOpenAI
 from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 
-from src.chat import bp
+from flaskapp.chat import bp
 
 q = deque()
 stop_item = "###finish###"

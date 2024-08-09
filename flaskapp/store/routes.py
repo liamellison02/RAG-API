@@ -3,7 +3,7 @@ from langchain_community.vectorstores import TiDBVectorStore
 from langchain_community.embeddings import OpenAIEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
-from src.store import bp
+from flaskapp.store import bp
 
 
 @bp.route('/new-file/')
