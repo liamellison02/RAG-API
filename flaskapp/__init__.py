@@ -1,5 +1,4 @@
 from flask import Flask, jsonify
-from config import Config
 from sentence_transformers import SentenceTransformer
 
 # embed_model = SentenceTransformer("sentence-transformers/text-embedding-ada-002", trust_remote_code=True)
@@ -10,7 +9,7 @@ from sentence_transformers import SentenceTransformer
 #     embedding = embed_model.encode(text)
 #     return embedding.tolist()
 
-def create_app(config_class=Config):
+def create_app(config_class):
     app = Flask(__name__)
     app.config.from_object(config_class)
 
