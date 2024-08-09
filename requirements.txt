@@ -1,5 +1,6 @@
 Flask
 flask_cors
+gunicorn
 python-dotenv
 tidb-vector
 sentence-transformers==3.0.1
